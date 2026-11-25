@@ -28,7 +28,7 @@ const { URL } = require('url');
 
 const PORT = parseInt(process.env.PORT || '3000', 10);
 const UPSTREAM_BASE = (process.env.UPSTREAM_BASE || 'https://iwanmei.kdns.fr/v1').replace(/\/+$/, '');
-const MODELS = (process.env.MODELS || 'agnes-3.0-flash,agnes-2.5-flash,deepseek-v4-flash,sensenova-6.8-flash,glm-5.2')
+const MODELS = (process.env.MODELS || 'k-exaone_v2.5,Atria-Dawn-Preview,minimax-m3,glm-5.3,sensenova-6.8-flash,glm-5.2,deepseek-v4-flash')
   .split(',').map((s) => s.trim()).filter(Boolean);
 const FAIL_THRESHOLD = parseInt(process.env.FAIL_THRESHOLD || '3', 10);
 const BENCH_SECONDS = parseInt(process.env.BENCH_SECONDS || '30', 10);
