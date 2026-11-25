@@ -1,0 +1,1 @@
+{"description":"OpenAI-compatible auto-routing proxy: tries models in priority order, circuit-breaker benches failing models, streams with pre-first-token failover.","engines":{"node":">=18"},"main":"server.js","name":"llm-auto-router","private":true,"scripts":{"start":"node server.js"},"version":"1.0.0"}
